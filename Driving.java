@@ -12,6 +12,9 @@ public class Driving{
 		int cylinders;
 		int doors;
 		
+		System.out.println("Please select vehicle.");
+		
+		
 			System.out.println("Starting your vehicle");
 			myMotor.turnOn();
 			
