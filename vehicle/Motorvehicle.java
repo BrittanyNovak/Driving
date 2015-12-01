@@ -2,7 +2,9 @@ package vehicle;
 
 public class Motorvehicle {
 	
+	private boolean isOff;
 	private boolean isRunning;
+	private String vehicle = "No Vehicle";
 	private String make = "No Make";
 	private String model = "No Model";
 	private int cylinders = 0;
@@ -10,10 +12,12 @@ public class Motorvehicle {
 	private int numOfWheels = 0;
 	private int numOfCyl = 0;
 	private int numOfDoors = 0;
+	private String vehicleType;
 	
-	public void Motorvehicle(int num){
+	public Motorvehicle(int num, String vType){
 		isRunning = false;
 		numOfWheels = num;
+		vehicleType = vType;
 	}
 	
 	public void turnOn(){
@@ -26,6 +30,14 @@ public class Motorvehicle {
 	
 	public boolean isRun(){
 		return isRunning;
+	}
+	
+	public boolean isVehicle(){
+		return isOff;
+	}
+	
+	public String getVehicType(){
+		return vehicleType;
 	}
 	
 	public String getModel(){
